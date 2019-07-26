@@ -25,15 +25,20 @@ var pikePlace = {
   },
   render() {
     this.calcCookiesEachHour();
-    var theUL = document.getElementById('pike');
+    var theDiv = document.getElementById('pike');
+    var h3 = document.createElement('h3');
+    h3.textContent = this.locationName;
+    theDiv.appendChild(h3);
+    var ul = document.createElement('ul');
+    theDiv.appendChild(ul);
     for (var i = 0; i < hours.length; i++) {
       var liEl = document.createElement('li');
       liEl.textContent = hours[i] + ': ' + this.cookiesEachHour[i] + ' cookies';
-      theUL.appendChild(liEl);
+      ul.appendChild(liEl);
     }
     liEl = document.createElement('li');
     liEl.textContent = 'Total: ' + this.totalDailyCookies + ' cookies';
-    theUL.appendChild(liEl);
+    ul.appendChild(liEl);
   }
 };
 
