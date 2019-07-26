@@ -12,7 +12,7 @@ var pikePlace = {
   totalDailyCookies: 0,
   calcCustomersEachHour: function() {
     for (var i = 0; i < hours.length; i++) {
-      this.customersEachHour.push(Math.random(this.minCustomersPerHour, this.maxCustomersPerHour));
+      this.customersEachHour.push(Math.random() * (this.maxCustomersPerHour - this.minCustomersPerHour) + this.minCustomersPerHour);
     }
   },
   calcCookiesEachHour: function() {
@@ -47,7 +47,7 @@ var seaTac={
   totalDailyCookies: 0,
   calcCustomersEachHour: function() {
     for (var i = 0; i < hours.length; i++) {
-      this.customersEachHour.push(Math.random(this.minCustomersPerHour, this.maxCustomersPerHour));
+      this.customersEachHour.push(Math.random() * (this.maxCustomersPerHour - this.minCustomersPerHour) + this.minCustomersPerHour);
     }
   },
   calcCookiesEachHour: function() {
@@ -115,7 +115,7 @@ var capitolHill={
   totalDailyCookies: 0,
   calcCustomersEachHour: function() {
     for (var i = 0; i < hours.length; i++) {
-      this.customersEachHour.push(Math.random(this.minCustomersPerHour, this.maxCustomersPerHour));
+      this.customersEachHour.push(Math.random() * (this.maxCustomersPerHour - this.minCustomersPerHour) + this.minCustomersPerHour);
     }
   },
   calcCookiesEachHour: function() {
@@ -149,7 +149,7 @@ var alki={
   totalDailyCookies: 0,
   calcCustomersEachHour: function() {
     for (var i = 0; i < hours.length; i++) {
-      this.customersEachHour.push(Math.random(this.minCustomersPerHour, this.maxCustomersPerHour));
+      this.customersEachHour.push(Math.random() * (this.maxCustomersPerHour - this.minCustomersPerHour) + this.minCustomersPerHour);
     }
   },
   calcCookiesEachHour: function() {
